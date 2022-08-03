@@ -24,7 +24,7 @@ def get_QAreport(job_id,targetdir):
     targetdir = targetdir
     
     
-    headers = {'Authorization': 'Token token=pvgbMxCLGsS72ZwsnuYj'}
+    headers = {'Authorization': 'Token token=###'}
     data = {'type': 'full'}
     response = requests.post('https://api.appen.com/v1/jobs/'+job_id+'/regenerate', headers=headers, data=data)    
     print(response) #Just for debug
